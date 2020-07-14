@@ -1,0 +1,3 @@
+create table bookings(c_email varchar(50) primary key, book_id number unique not null, cust_name varchar(30) not null, book_date varchar(20) not null, book_time varchar(20) not null);
+create table book_data(book_id number primary key, checkin varchar(20) not null, checkout varchar(20) not null, guest_freq number not null, room_req number not null, roomtype number not null unique);
+create table rooms(type number primary key, room_price number not null, available_rooms number not null);
